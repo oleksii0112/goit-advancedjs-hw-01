@@ -10,9 +10,99 @@
 @import url('./container.css');
 @import url('./animations.css');
 
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+
+.gallery {
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
+    padding: 100px 156px;
+    row-gap: 24px;
+    column-gap: 24px;            
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    display: block;
+    object-fit: cover
+}
+
+.gallery-image:hover,
+.gallery-image:focus {
+    transform: scale(1.04);
+}
+
+.form-container {
+    max-width: 360px;
+    max-height: 100%;
+    padding: 24px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;   
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.email-label {
+    margin-bottom: 8px;
+}
+
+.email-input {
+    max-width: 100%;
+    height: 24px;
+    padding: 8px 16px;
+    border: 1px solid #808080;
+    border-radius: 8px;
+}
+
+.textarea {
+    min-height: 64px;
+    max-width: 100%;
+    padding: 8px 16px;
+    border: 1px solid #808080;
+    border-radius: 8px;    
+    outline: none;
+    resize: none;
+}    
+
+.textarea-label {
+    margin-bottom: 16px;
+}
+
+.btn-form {
+    border: none;
+    max-width: 95px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+    background-color: #4e75ff;
+}
+
+.btn-form:hover,
+.btn-form:focus{
+    background-color: #6c8cff;    
+}
+
+input:focus,
+input:hover,
+textarea:focus,
+textarea:hover{
+  outline: 1px solid black;
+}
